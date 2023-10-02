@@ -1,0 +1,4 @@
+Redirect 302 /htdocs/index.php http://bayviewparkhotel.rf.gd/index.php
+RewriteEngine On 
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
